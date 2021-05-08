@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+    color:#fff;
+    height: 100vh;
+    width: 100%;
+    background: #333 url('./components/assets/header-BG.jpg') center center / cover;
+
 }
 
-.App-link {
-  color: #61dafb;
+.inner-header{
+    color:#fff;
+    text-align: center;
+    margin-top:32px;
+    font-size:4rem;
+
+}
+.inner-header h1{
+    font-size:4rem
+}
+.inner-header a{
+    color:#222;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inner-header a:hover{
+    color: #333;
 }
+.skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    color:#222;
+    background-color: #fff;
+}
+.skills i {
+    font-size:2rem;
+    margin:3px
+}
+
+.card{
+    width: 18rem;
+    margin:0 2rem;
+}
+.card img {
+    width:100%;
+    height:auto;
+}
+.work{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin:2rem 0rem;
+
+}
+
+.footer{
+    height:5vh;
+    background-color:#222;
+    color:#fff;
+    text-align:center;
+}
+
+  
+  @media(min-width: 1200px) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  
+  @media(max-width: 800px) {
+    .container {
+      padding: 0 1rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media(max-width: 500px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
